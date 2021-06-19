@@ -22,7 +22,7 @@ GET {{api}}/users/60c6e44afbdab80ef181ed37
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyNDA0NjI4NSwiZXhwIjoxNjI0MzA1NDg1fQ.FAd2MTZsueFb3LcPaSZfHOyhzL4a1zgUPl1Qmfsf0VE
 
 ### PUT /user/:userId
-PUT {{api}}/users/60cd01e014abd3285c9b9ff9
+PUT {{api}}/users/60cd028c14abd3285c9ba001
 Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzc2N2Y1NzBlYjQzMjliMTc0NzlkNSIsImlhdCI6MTYyNDA0NjI0MSwiZXhwIjoxNjI0MzA1NDQxfQ.BUAqUOGPTEfi03YFpzYqVksaaggJoMFDv0IA8eCKLyM
 
@@ -32,7 +32,7 @@ x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzc2N2Y1NzBlYjQ
 }
 
 ### DEL /users/:userId
-DELETE {{api}}/users/60cd01e014abd3285c9b9ff9
+DELETE {{api}}/users/60cd028c14abd3285c9ba001
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzc2N2Y1NzBlYjQzMjliMTc0NzlkNSIsImlhdCI6MTYyNDA0NjI0MSwiZXhwIjoxNjI0MzA1NDQxfQ.BUAqUOGPTEfi03YFpzYqVksaaggJoMFDv0IA8eCKLyM
 
 
