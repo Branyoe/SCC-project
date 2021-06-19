@@ -1,0 +1,41 @@
+@api = http://localhost:3000/api
+
+### GET /campos (get all campos)
+GET {{api}}/campos
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyMzY4MTcwNSwiZXhwIjoxNjIzOTQwOTA1fQ.Df0nhnvUP2sO-p6zgmJEl3kwfEggKvHCXJmvNTNe1dQ
+
+//**************************************************************
+
+### GET /campos/:campoId (get a campo by id)
+GET {{api}}/campos/60c76bc770eb4329b17479d8
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyMzY4MTY3MiwiZXhwIjoxNjIzOTQwODcyfQ.sCSygUC9hqTDPGvPbg0k6-E5zdTMSL1LWW2xD2m90pA
+
+//**************************************************************
+
+### POST /campos (create a new campo)
+POST {{api}}/campos
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyMzY4MTY3MiwiZXhwIjoxNjIzOTQwODcyfQ.sCSygUC9hqTDPGvPbg0k6-E5zdTMSL1LWW2xD2m90pA
+
+{
+  "description": "creado por user"
+}
+
+//**************************************************************
+
+### DELETE /campos/:campoId (delete a campo by id)
+DELETE {{api}}/campos/60be3cbba1830233480bc337
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyMzY4MTcwNSwiZXhwIjoxNjIzOTQwOTA1fQ.Df0nhnvUP2sO-p6zgmJEl3kwfEggKvHCXJmvNTNe1dQ
+
+//**************************************************************
+
+### UPDATE /campos/:campoID (update a campo by id)
+PUT {{api}}/campos/60c76bc770eb4329b17479d8
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyMzY4MTcwNSwiZXhwIjoxNjIzOTQwOTA1fQ.Df0nhnvUP2sO-p6zgmJEl3kwfEggKvHCXJmvNTNe1dQ
+
+{
+  "description": "modificado por moderator"
+}

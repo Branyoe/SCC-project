@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "9a01349e-9da0-49bd-99e7-872f989247c0",
+		"name": "API-SSC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/campos",
+			"item": [
+				{
+					"name": "GET campos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/campos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST campos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"campo de prueba 1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/campos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"campos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

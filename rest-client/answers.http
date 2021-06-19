@@ -1,0 +1,51 @@
+@api = http://localhost:3000/api
+
+### POST /answers (create a new answer)
+POST {{api}}/answers
+Content-Type: application/json
+//necesita el role user
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyMzY4MTY3MiwiZXhwIjoxNjIzOTQwODcyfQ.sCSygUC9hqTDPGvPbg0k6-E5zdTMSL1LWW2xD2m90pA
+
+{
+  "respost": "creado por user sdas",
+  "campo": "60ba53a70d1ec555d9ae9038",
+  "user": "60c6e43afbdab80ef181ed36"
+}
+
+//******************************************************
+
+### GET /answers (get all answers)
+
+GET {{api}}/answers
+Content-Type: application/json
+//necesista el role
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzc2N2Y1NzBlYjQzMjliMTc0NzlkNSIsImlhdCI6MTYyMzY4MTc4OSwiZXhwIjoxNjIzOTQwOTg5fQ.JFbPvmVbOge1Taz-pexTA2lPrbmWd4PPQZhjMRyvGUg
+
+//******************************************************
+
+### GET /answers/:userID (get answers match with a user)
+
+GET {{api}}/answers/60c6e43afbdab80ef181ed36
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlM2U1ZmJkYWI4MGVmMTgxZWQzNSIsImlhdCI6MTYyMzY4MTczMiwiZXhwIjoxNjIzOTQwOTMyfQ.YIG0gMDmdk5Kp_UzCEd2kyHA9VgUR1HLYSlbgbBsndA
+
+
+//******************************************************
+
+### PUT /answers/:answerID (update a asnwer by id)
+
+PUT {{api}}/answers/60c7766c70eb4329b17479dc
+Content-Type: application/json
+//necesita el rol de usuario
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyNDA0NjMxOSwiZXhwIjoxNjI0MzA1NTE5fQ.yVS9XQz8ml4yEfG_96R-V4_Ql9jF0YdQ0RzQ_0AbbFU
+
+{
+  "respost": "respuesta 2.0.2.1"
+}
+
+### DELETE /answers/:answerID (dlete a answer by id)
+
+DELETE {{api}}/answers/60c7742f70eb4329b17479da
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyNDA0NjMxOSwiZXhwIjoxNjI0MzA1NTE5fQ.yVS9XQz8ml4yEfG_96R-V4_Ql9jF0YdQ0RzQ_0AbbFU
+

@@ -1,0 +1,25 @@
+@api = http://localhost:3000/api
+
+### POST /users (create a new user)
+POST {{api}}/users
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyNDA0NjI4NSwiZXhwIjoxNjI0MzA1NDg1fQ.FAd2MTZsueFb3LcPaSZfHOyhzL4a1zgUPl1Qmfsf0VE
+
+{
+  "username": "Admin3",
+  "email": "Admin3@ucol.mx",
+  "password": "20185355H",
+  "roles": ["admin"]
+}
+
+
+### GET /USERS (get all users)
+GET {{api}}/users
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyNDA0NjMxOSwiZXhwIjoxNjI0MzA1NTE5fQ.yVS9XQz8ml4yEfG_96R-V4_Ql9jF0YdQ0RzQ_0AbbFU
+
+### GET /users/:userID
+GET {{api}}/users/60c6e44afbdab80ef181ed37
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyNDA0NjI4NSwiZXhwIjoxNjI0MzA1NDg1fQ.FAd2MTZsueFb3LcPaSZfHOyhzL4a1zgUPl1Qmfsf0VE
+
+
+//**************************************************************
