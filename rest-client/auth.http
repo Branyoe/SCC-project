@@ -5,7 +5,7 @@ POST {{api}}/auth/signin
 Content-Type: application/json
 
 {
-  "email": "admin@ucol.mx",
+  "email": "user2.1@ucol.mx",
   "password": "20185355H"
 }
 

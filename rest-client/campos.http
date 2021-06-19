@@ -32,10 +32,10 @@ x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI
 //**************************************************************
 
 ### UPDATE /campos/:campoID (update a campo by id)
-PUT {{api}}/campos/60c76bc770eb4329b17479d8
+PUT {{api}}/campos/60ba53a70d1ec555d9ae9038
 Content-Type: application/json
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyMzY4MTcwNSwiZXhwIjoxNjIzOTQwOTA1fQ.Df0nhnvUP2sO-p6zgmJEl3kwfEggKvHCXJmvNTNe1dQ
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzc2N2Y1NzBlYjQzMjliMTc0NzlkNSIsImlhdCI6MTYyNDA0NjI0MSwiZXhwIjoxNjI0MzA1NDQxfQ.BUAqUOGPTEfi03YFpzYqVksaaggJoMFDv0IA8eCKLyM
 
 {
-  "description": "modificado por moderator"
+  "description": "modificado por admi-mod"
 }
