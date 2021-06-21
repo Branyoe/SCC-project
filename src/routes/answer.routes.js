@@ -1,7 +1,9 @@
 import { Router } from "express";
 const router = Router();
+const router2 = Router()
 import * as answerCtrl from '../controller/answer.controller';
 import {authJwt} from '../middlewares/index';
+
 
 //create a new answer
 router.post('/',[authJwt.verifyToken, authJwt.isUser] ,answerCtrl.createAnswer);
@@ -20,6 +22,13 @@ router.get(
   answerCtrl.getAnswersByUserId
 );
 
+//get answer for user
+router2.get(
+  '/',
+  [authJwt.verifyToken, authJwt.isUser],
+  answerCtrl.getMyAnswers
+)
+
 //update answer by id
 router.put(
   '/:answerId',
@@ -36,4 +45,4 @@ router.delete(
 
 
 
-export default router;
+export { router, router2};

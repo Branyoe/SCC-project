@@ -1,5 +1,6 @@
 @api = http://localhost:3000/api
 
+GET http://localhost:3000/
 ### POST /answers (create a new answer)
 POST {{api}}/answers
 Content-Type: application/json
@@ -7,7 +8,7 @@ Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDAzOGNkOGExOGEyNDUwNDFhNGJhYSIsImlhdCI6MTYyNDI1ODc2NSwiZXhwIjoxNjI0NTE3OTY1fQ.AkVc_R9odSMxK0zPHkQi4FLSdjPY7tVMlu9vziRJHi4
 
 {
-  "answer": "creado by",
+  "answer": "creado hoy by",
   "campo": "60be3cb4a1830233480bc336"
 }
 
@@ -28,25 +29,29 @@ GET {{api}}/answers/60c6e43afbdab80ef181ed36
 Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyNDA0NjI4NSwiZXhwIjoxNjI0MzA1NDg1fQ.FAd2MTZsueFb3LcPaSZfHOyhzL4a1zgUPl1Qmfsf0VE
 
+###get answer for user****************************************
+GET {{api}}/my-answers/
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyNDA0NjMxOSwiZXhwIjoxNjI0MzA1NTE5fQ.yVS9XQz8ml4yEfG_96R-V4_Ql9jF0YdQ0RzQ_0AbbFU
+
 
 //******************************************************
 
 ### PUT /answers/:answerID (update a asnwer by id)
 
-PUT {{api}}/answers/60c7766c70eb4329b17479dc
+PUT {{api}}/answers/60d039038a18a245041a4bb3
 Content-Type: application/json
 //necesita el rol de usuario
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyNDA0NjMxOSwiZXhwIjoxNjI0MzA1NTE5fQ.yVS9XQz8ml4yEfG_96R-V4_Ql9jF0YdQ0RzQ_0AbbFU
 
 {
-  "respost": "respuesta 2.0.2.1"
+  "answer": "respuesta 2.0.2.1"
 }
 
 //**************************************************
 
 ### DELETE /answers/:answerID (dlete a answer by id)
 
-DELETE {{api}}/answers/60c7742f70eb4329b17479da
+DELETE {{api}}/answers/60d039038a18a245041a4bb3
 Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyNDA0NjMxOSwiZXhwIjoxNjI0MzA1NTE5fQ.yVS9XQz8ml4yEfG_96R-V4_Ql9jF0YdQ0RzQ_0AbbFU
 

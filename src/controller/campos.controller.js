@@ -57,10 +57,13 @@ export const updateCampoById = async(req, res)=>{
 export const deleteCampoById = async(req, res)=>{
   try {
     if(!req.params.campoId) return res.status(403).json({message: "id not received"})
+    const foundCampo = await Campo.findById(req.params.campoId);
+    if(!foundCampo) return res.status(403).json({ message: "campo not found"});
     await Answer.deleteMany({campo: req.params.campoId});
     await Campo.findByIdAndDelete(req.params.campoId)
     res.status(204).json()
   } catch (e) {
+    console.log('entró catch');
     res.status(403).json(e);
   }
 }

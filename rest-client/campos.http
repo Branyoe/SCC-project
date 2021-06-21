@@ -26,8 +26,8 @@ x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI
 //**************************************************************
 
 ### DELETE /campos/:campoId (delete a campo by id)
-DELETE {{api}}/campos/60be3cbba1830233480bc337
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyMzY4MTcwNSwiZXhwIjoxNjIzOTQwOTA1fQ.Df0nhnvUP2sO-p6zgmJEl3kwfEggKvHCXJmvNTNe1dQ
+DELETE {{api}}/campos/60ba53a70d1ec555d9ae9038
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyNDA0NjI4NSwiZXhwIjoxNjI0MzA1NDg1fQ.FAd2MTZsueFb3LcPaSZfHOyhzL4a1zgUPl1Qmfsf0VE
 
 //**************************************************************
 

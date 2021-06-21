@@ -75,6 +75,7 @@ export const updateUserById = async (req, res) => {
     if (!req.params.userId) return res.status(403).json({ message: "userId not provied" });
     //valida req.body
     if (!req.body) return res.status(403).json({ message: "incoplet request" });
+    
 
     //DEstructuraciones*****************************
     //destructuración de req.body
@@ -85,6 +86,7 @@ export const updateUserById = async (req, res) => {
     //Diseño del usuario actualizado****************
     //Referencia a usuario viejo
     const oldUser = await User.findById(userId);
+    if(!oldUser) return res.status(403).json({ message: "user not found" });
     //esquema de nuevo usuario
     const updatedUser = {
       username: username ? username : oldUser.username,

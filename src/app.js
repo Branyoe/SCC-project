@@ -30,7 +30,8 @@ import pkg from "../package.json";
 import camposRoutes from './routes/campos.routes'
 import authRoutes from './routes/auth.routes'
 import usersRoutes from './routes/user.routes';
-import answerRoutes from './routes/answer.routes';
+import {answerRoutes} from './routes/answer.routes';
+import {router, router2} from './routes/answer.routes'
 
 import {createRoles} from './libs/initialSetup';
 
@@ -56,6 +57,7 @@ app.get('/', (req, res) => {
 app.use('/api/campos',camposRoutes);
 app.use('/api/auth',authRoutes);
 app.use('/api/users', usersRoutes);
-app.use('/api/answers', answerRoutes);
+app.use('/api/answers', router);
+app.use('/api/my-answers', router2);
 
 export default app;

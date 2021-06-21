@@ -1,7 +1,7 @@
 {
   "name": "proyect-scc2",
   "version": "1.0.0",
-  "description": "",
+  "description": "API-Rest by UDC",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir build",
@@ -9,7 +9,7 @@
     "start": "node build/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brandon Yoel Hernández Ascencio",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

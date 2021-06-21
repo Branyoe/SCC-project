@@ -27,7 +27,7 @@ Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzc2N2Y1NzBlYjQzMjliMTc0NzlkNSIsImlhdCI6MTYyNDA0NjI0MSwiZXhwIjoxNjI0MzA1NDQxfQ.BUAqUOGPTEfi03YFpzYqVksaaggJoMFDv0IA8eCKLyM
 
 {
-  "email": "user2.2@ucol.mx",
+  "email": "user2q.2@ucol.mx",
   "roles": ["user"]
 }
 
