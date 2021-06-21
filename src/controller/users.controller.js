@@ -70,7 +70,6 @@ export const getUserById = async (req, res) => {
 //update a user by id
 export const updateUserById = async (req, res) => {
   try {
-    console.log('entró');
     //Validaciones**********************************
     //valida userId
     if (!req.params.userId) return res.status(403).json({ message: "userId not provied" });

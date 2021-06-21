@@ -4,12 +4,11 @@
 POST {{api}}/answers
 Content-Type: application/json
 //necesita el role user
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI4MGVmMTgxZWQzNyIsImlhdCI6MTYyMzY4MTY3MiwiZXhwIjoxNjIzOTQwODcyfQ.sCSygUC9hqTDPGvPbg0k6-E5zdTMSL1LWW2xD2m90pA
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDAzOGNkOGExOGEyNDUwNDFhNGJhYSIsImlhdCI6MTYyNDI1ODc2NSwiZXhwIjoxNjI0NTE3OTY1fQ.AkVc_R9odSMxK0zPHkQi4FLSdjPY7tVMlu9vziRJHi4
 
 {
-  "respost": "creado por user sdas",
-  "campo": "60ba53a70d1ec555d9ae9038",
-  "user": "60c6e43afbdab80ef181ed36"
+  "answer": "creado by",
+  "campo": "60be3cb4a1830233480bc336"
 }
 
 //******************************************************
@@ -19,7 +18,7 @@ x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI
 GET {{api}}/answers
 Content-Type: application/json
 //necesista el role
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzc2N2Y1NzBlYjQzMjliMTc0NzlkNSIsImlhdCI6MTYyMzY4MTc4OSwiZXhwIjoxNjIzOTQwOTg5fQ.JFbPvmVbOge1Taz-pexTA2lPrbmWd4PPQZhjMRyvGUg
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyNDA0NjI4NSwiZXhwIjoxNjI0MzA1NDg1fQ.FAd2MTZsueFb3LcPaSZfHOyhzL4a1zgUPl1Qmfsf0VE
 
 //******************************************************
 
@@ -27,7 +26,7 @@ x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzc2N2Y1NzBlYjQ
 
 GET {{api}}/answers/60c6e43afbdab80ef181ed36
 Content-Type: application/json
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlM2U1ZmJkYWI4MGVmMTgxZWQzNSIsImlhdCI6MTYyMzY4MTczMiwiZXhwIjoxNjIzOTQwOTMyfQ.YIG0gMDmdk5Kp_UzCEd2kyHA9VgUR1HLYSlbgbBsndA
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDNhZmJkYWI4MGVmMTgxZWQzNiIsImlhdCI6MTYyNDA0NjI4NSwiZXhwIjoxNjI0MzA1NDg1fQ.FAd2MTZsueFb3LcPaSZfHOyhzL4a1zgUPl1Qmfsf0VE
 
 
 //******************************************************
@@ -42,6 +41,8 @@ x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZlNDRhZmJkYWI
 {
   "respost": "respuesta 2.0.2.1"
 }
+
+//**************************************************
 
 ### DELETE /answers/:answerID (dlete a answer by id)
 

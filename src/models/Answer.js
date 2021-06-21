@@ -3,7 +3,7 @@ const Campo = model('Campos');
 const User = model('User');
 
 const answerSchema = new Schema({
-  respost: {
+  answer: {
     type: String,
   },
   campo: {
