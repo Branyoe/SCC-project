@@ -26,6 +26,7 @@
 import express from 'express';
 import morgan from "morgan";
 import pkg from "../package.json";
+import cors from "cors"
 
 import camposRoutes from './routes/campos.routes'
 import authRoutes from './routes/auth.routes'
@@ -42,6 +43,9 @@ createRoles();
 app.use(morgan('dev'));
 app.use(express.json());
 app.set('pkg', pkg);
+app.use(cors())
+
+app.options(cors("*"));
 
 
 
